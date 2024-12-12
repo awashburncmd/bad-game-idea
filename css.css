@@ -1,0 +1,17 @@
+
+
+
+
+body {
+background-color:darkgrey
+}
+h1 {
+    color:blue;
+    text-align:center;
+}
+.game-btn {
+    display:block;
+   margin:0 auto;
+   
+
+}
