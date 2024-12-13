@@ -22,7 +22,10 @@ opacity:.5;
 }
 #corn-img:active{
     opacity:.3;
-    transform:scale(1.05)
+    transform:scale(.8)
+}
+#corn-img {
+    transform:scale(.5)
 }
 .left h3 {
 text-align:center;
