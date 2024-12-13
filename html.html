@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
- <title></title>
- <header>
+<head>
+ <title>Cooking Clicker</title>
+
+ 
+
     <link href="css.css" rel="stylesheet">
     <meta charset="UTF-8">
- </header>   
- <head>
-    <h1>shitty game</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
  </head>
 <body>
-    <div >
-    <button id="game-btn">hello</button>
+   <section>
+      <div class="main">
+         
+      <div class="left">
+         <h3 >Grains: <span id="corn-num">0</span></h3>
+         <img id="corn-img" src="assets\clickergame-cornpicutre.png" onclick="addCorn()" draggable="false">
+         </div>
+
+      <div class="right">
+         <div class="upgrade" onclick="buyClicker()">
+         <div class="left-btn"></div>
+
+         <div class="middle-btn">
+         <h4>Clicker</h4>
+         <div><p>Cost:<span id="clicker-cost" >10</span> </p></div>
+         </div>
+
+         <div class="right-btn">level: <span id="clicker-lvl">0</span></div>
+         </div>
+
+         <div class="upgrade" onclick="buyClicker()">
+            <div class="left-btn"></div>
+   
+            <div class="middle-btn">
+            <h4>Harvester</h4>
+            <div><p>Cost:<span id="clicker-cost" >30</span> </p></div>
+            </div>
+   
+            <div class="right-btn">level: <span id="clicker-lvl">0</span></div>
+      </div>
+      
+   </section>
+  
+   
 </div>
 </body>
- <script src="java.js"></script>
+ <script src="index.js"></script>
 </html>
