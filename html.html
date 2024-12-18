@@ -14,15 +14,16 @@
       <div class="main">
          <!-- corn num display-->
       <div class="left">
-         <h3 >Grains: <span id="corn-num">0</span></h3>
-         <img id="corn-img" src="assets\clickergame-cornpicutre.png" onclick="addCorn()" draggable="false">
+         <h3 class="grains">Grains: <span id="corn-num">0</span></h3>
+         <img id="corn-img" src="assets\corn picture.png" onclick="addCorn()" draggable="false">
          </div>
+
       <!-- clicker upgrade-->
       <div class="right">
          <div class="upgrade" onclick="buyClicker()">
-         <div class="left-btn"></div>
-
-         <div class="middle-btn">
+         <div class="left-btn"> <img src="assets\harvester.png" class="img"></div>
+         <div class="middle-btn" >
+          
          <h4>Clicker</h4>
          <div><p>Cost:<span id="clicker-cost" >10</span> </p></div>
          </div>
@@ -32,16 +33,31 @@
             <!-- Harvester Upgrade -->
          <div class="upgrade" onclick="buyHarvester()">
             <div class="left-btn"></div>
-   
+   <img src="assets\harvester.png" class="img">
             <div class="middle-btn">
             <h4>Harvester</h4>
-            <div><p>Cost:<span id="harvester-cost">30</span> </p></div>
+            <div><p>Cost:<span id="harvester-cost" title="testing">30</span> </p></div>
             </div>
    
             <div class="right-btn">level: <span id="harvester-lvl">0</span></div>
       </div>
-      
+
+      <div class="upgrade" onclick="buyCombine()">
+         <div class="left-btn"></div>
+<img src="" class="img">
+         <div class="middle-btn">
+         <h4>Combine</h4>
+         <div><p>Cost:<span id="combine-cost">100</span> </p></div>
+         </div>
+         <div class="right-btn">level: <span id="combine-lvl">0</span></div>
+   </div>
    </section>
+   <div id="stats">
+      <div class="stat-txt">
+         <p>Corn per click: <span id="cpc">1</span></p>
+         <p>Corn per second: <span id="cps">0</span></p>
+      </div>
+   </div>
   
    
 </div>
